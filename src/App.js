@@ -1,20 +1,20 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "../src/Components/Header";
-import Footer from "../src/Components/Footer";
-import Main from "./pages/Main/Main.js";
-import Project from "./pages/Project";
-import Contact from "./pages/Contact";
+import NavTabs from "./Components/NavTabs/NavTabs";
+import Footer from "./Components/Footer/Footer";
+import Main from "./Components/pages/Main/Main";
+import Projects from "./Components/pages/Projects/Projects";
+import Contact from "./Components/pages/Contact/Contact";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <NavTabs />
         <Switch>
-        <Route path="/project" component={Project}>
-          <Project />
+        <Route path="/project" component={Projects}>
+          <Projects />
         </Route>
         <Route path="/contact" component={Contact}>
           <Contact />

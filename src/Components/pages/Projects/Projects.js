@@ -1,11 +1,11 @@
 import React from "react";
-import SpacePortalImage from "../images/Space Portal _ Main.gif";
-// import ProjectTwoImage from "../images/Screenshot from 2020-08-10 17-54-50.png";
-import QuizImage from "../images/Quiz.gif";
-import RockPaperScissorsImage from "../images/Rock Paper Scissors.gif";
-import PasswordGeneratorImage from "../images/Password Generator.gif";
-import WorkDayScheduler from "../images/Work Day Scheduler.gif";
-import WeatherDashboardImage from "../images/Weather Dashboard.gif";
+import SpacePortalImage from "./images/Space Portal _ Main.gif";
+// import ProjectTwoImage from "./images/Screenshot from 2020-08-10 17-54-50.png";
+import QuizImage from "./images/Quiz.gif";
+import RockPaperScissorsImage from "./images/Rock Paper Scissors.gif";
+import PasswordGeneratorImage from "./images/Password Generator.gif";
+import WorkDayScheduler from "./images/Work Day Scheduler.gif";
+import WeatherDashboardImage from "./images/Weather Dashboard.gif";
 
 function Project() {
   return (

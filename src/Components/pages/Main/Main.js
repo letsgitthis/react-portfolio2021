@@ -1,7 +1,7 @@
 import React from "react";
 import "./main.css";
-import ProfileImage from "../../images/profile-image.jpg";
-import BackgroundImage from "../../images/background-image.jpeg";
+import ProfileImage from "../../../images/profile-image.jpg";
+import BackgroundImage from "../../../images/background-image.jpeg";
 
 function Main() {
   return (
