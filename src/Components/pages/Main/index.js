@@ -1,32 +1,25 @@
-import React from 'react';
-import 'materialize-css';
-import { Parallax } from 'react-materialize';
-import './style.css';
-import BackgroundImage from './images/background-image.jpeg';
+import React from "react";
+import "materialize-css";
+import { Parallax } from "react-materialize";
+import "./style.css";
+import BackgroundImage from "./images/background-image.jpeg";
 
 function Main() {
   return (
     <body>
-
       <div>
         <Parallax
-          image={<img 
-            src={BackgroundImage}
-            alt="background-img"
-            />}
+          image={<img src={BackgroundImage} alt="background-img" />}
           options={{
-            responsiveThreshold: 0
+            responsiveThreshold: 0,
           }}
-          />
-        </div>
-      
-      {/* Profile Image */}
-      <div 
-        id="bio-image" 
-        alt="profile-img">
+        />
       </div>
 
-      {/* <!-- profile image container --> */}
+      {/* Profile Image */}
+      <div id="bio-image" alt="profile-img"></div>
+
+      {/* profile image container */}
       <figure className="container-fluid">
         <div className="row">
           <p className="quote">"Stop saying, I can't because...</p>
@@ -34,7 +27,7 @@ function Main() {
         </div>
       </figure>
 
-      {/* <!-- bio info --> */}
+      {/* bio info */}
       <div className="body-container">
         <div className="row">
           <div className="col m1"></div>
@@ -77,7 +70,6 @@ function Main() {
       </div>
 
       <div className="fa-linkedin"></div>
-
     </body>
   );
 }
