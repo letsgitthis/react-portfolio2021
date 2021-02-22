@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* #footer {
+  max-height: 20px;
+  height: 20px;
+} */
+
+.page-footer {
+  max-height: 200px;
+  height: 200px;
+  /* margin-top: 30vh; */
+  background-color: rgb(34, 33, 33);
+}
+
+/* .footer {
+  color: white;
+}
+
+.mobile-footer {
+  display: flex;
+  margin-top: 10px;
+  height: 20px !important;
+} */

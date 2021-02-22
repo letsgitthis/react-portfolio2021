@@ -1,11 +1,11 @@
 import React from "react";
-import SpacePortalImage from "../images/Space Portal _ Main.gif";
-// import ProjectTwoImage from "../images/Screenshot from 2020-08-10 17-54-50.png";
-import QuizImage from "../images/Quiz.gif";
-import RockPaperScissorsImage from "../images/Rock Paper Scissors.gif";
-import PasswordGeneratorImage from "../images/Password Generator.gif";
-import WorkDayScheduler from "../images/Work Day Scheduler.gif";
-import WeatherDashboardImage from "../images/Weather Dashboard.gif";
+import SpacePortalImage from "./images/Space Portal _ Main.gif";
+// import ProjectTwoImage from "./images/Screenshot from 2020-08-10 17-54-50.png";
+import QuizImage from "./images/Quiz.gif";
+import RockPaperScissorsImage from "./images/Rock Paper Scissors.gif";
+import PasswordGeneratorImage from "./images/Password Generator.gif";
+import WorkDayScheduler from "./images/Work Day Scheduler.gif";
+import WeatherDashboardImage from "./images/Weather Dashboard.gif";
 
 function Project() {
   return (
@@ -94,11 +94,7 @@ function Project() {
                   rel="noopener noreferrer"
                   href="https://letsgitthis.github.io/homework-week-4/"
                 >
-                  <img
-                    class="card-video"
-                    src={QuizImage}
-                    alt="quiz-img"
-                  />
+                  <img class="card-video" src={QuizImage} alt="quiz-img" />
                 </a>
                 <span class="card-title">Card Title</span>
               </div>
@@ -256,8 +252,8 @@ function Project() {
             </div>
           </div>
         </div> */}
-        {/* <!-- TradeUp --> */}
-        {/* <div class="col s12 m6">
+          {/* <!-- TradeUp --> */}
+          {/* <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
                 <a
@@ -295,7 +291,6 @@ function Project() {
               </div>
             </div>
           </div> */}
-          
         </div>
       </div>
     </section>

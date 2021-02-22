@@ -1,27 +1,21 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "../src/Components/Header";
-import Footer from "../src/Components/Footer";
-import Main from "./pages/Main/Main.js";
-import Project from "./pages/Project";
-import Contact from "./pages/Contact";
+import NavTabs from "./Components/NavTabs";
+import Footer from "./Components/Footer";
+import Main from "./Components/pages/Main";
+import Projects from "./Components/pages/Projects";
+import Contact from "./Components/pages/Contact";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header />
+      <div>
+        <NavTabs />
         <Switch>
-        <Route path="/project" component={Project}>
-          <Project />
-        </Route>
-        <Route path="/contact" component={Contact}>
-          <Contact />
-        </Route>
-        <Route path="/" component={Main}>
-          <Main />
-        </Route>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </div>
@@ -30,4 +24,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,22 +1,25 @@
 import React from "react";
-import "./main.css";
-import ProfileImage from "../../images/profile-image.jpg";
-import BackgroundImage from "../../images/background-image.jpeg";
+import "materialize-css";
+import { Parallax } from "react-materialize";
+import "./style.css";
+import BackgroundImage from "./images/background-image.jpeg";
 
 function Main() {
   return (
-    <body className="App-header">
-          <img
-            className="background-image"
-            src={BackgroundImage}
-            alt="background-img"
-          />
-
+    <body>
       <div>
-        <img id="bio-image" src={ProfileImage} alt="profile-img" />
+        <Parallax
+          image={<img src={BackgroundImage} alt="background-img" />}
+          options={{
+            responsiveThreshold: 0,
+          }}
+        />
       </div>
 
-      {/* <!-- profile image container --> */}
+      {/* Profile Image */}
+      <div id="bio-image" alt="profile-img"></div>
+
+      {/* profile image container */}
       <figure className="container-fluid">
         <div className="row">
           <p className="quote">"Stop saying, I can't because...</p>
@@ -24,12 +27,12 @@ function Main() {
         </div>
       </figure>
 
-      {/* <!-- bio info --> */}
+      {/* bio info */}
       <div className="body-container">
         <div className="row">
           <div className="col m1"></div>
           <div id="main-bio" className="col m4">
-            {/* <p>
+            <p>
               I was ready for a career change and made the decision to quit my
               job, sell my house, move back home to Austin, Texas and earn
               certifications to become a Web Developer/Software Engineer. My
@@ -61,10 +64,12 @@ function Main() {
               certification from The Austin Coding Bootcamp at UT Austin. Now
               finally looking to apply what I have learned in a professional
               setting.
-            </p> */}
+            </p>
           </div>
         </div>
       </div>
+
+      <div className="fa-linkedin"></div>
     </body>
   );
 }
